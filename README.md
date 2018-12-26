@@ -3,7 +3,9 @@ github.com/OneOfOne/fuse -- Filesystems in Go
 
 ## This is a fork of `bazil.org/fuse` with some cleanable and PRs.
 
--
+- x/net/context -> context
+- [Updated the HandleReader to not panic if the response Data is smaller than file #204](https://github.com/bazil/fuse/pull/204)
+
 `github.com/OneOfOne/fuse` is a Go library for writing FUSE userspace
 filesystems.
 

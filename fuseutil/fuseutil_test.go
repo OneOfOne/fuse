@@ -3,7 +3,7 @@ package fuseutil
 import (
 	"testing"
 
-	"bazil.org/fuse"
+	"github.com/OneOfOne/fuse"
 )
 
 func TestHandleRead(t *testing.T) {
@@ -49,6 +49,7 @@ func TestHandleRead(t *testing.T) {
 			validate: func(args args) bool { return string(args.resp.Data) == sampleFileData },
 		},
 	}
+
 	for _, tt := range tests {
 		if tt.hook != nil {
 			tt.hook()
