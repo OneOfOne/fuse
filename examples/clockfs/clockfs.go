@@ -3,6 +3,7 @@
 package main
 
 import (
+	"context"
 	"flag"
 	"fmt"
 	"log"
@@ -15,7 +16,6 @@ import (
 	"github.com/OneOfOne/fuse/fs"
 	_ "github.com/OneOfOne/fuse/fs/fstestutil"
 	"github.com/OneOfOne/fuse/fuseutil"
-	"golang.org/x/net/context"
 )
 
 func usage() {

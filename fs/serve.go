@@ -3,6 +3,9 @@
 package fs // import "github.com/OneOfOne/fuse/fs"
 
 import (
+	"bytes"
+	"context"
+
 	"encoding/binary"
 	"fmt"
 	"hash/fnv"
@@ -13,12 +16,6 @@ import (
 	"strings"
 	"sync"
 	"time"
-
-	"golang.org/x/net/context"
-)
-
-import (
-	"bytes"
 
 	"github.com/OneOfOne/fuse"
 	"github.com/OneOfOne/fuse/fuseutil"

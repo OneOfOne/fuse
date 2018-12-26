@@ -1,6 +1,7 @@
 package bench_test
 
 import (
+	"context"
 	"io"
 	"io/ioutil"
 	"os"
@@ -10,7 +11,6 @@ import (
 	"github.com/OneOfOne/fuse"
 	"github.com/OneOfOne/fuse/fs"
 	"github.com/OneOfOne/fuse/fs/fstestutil"
-	"golang.org/x/net/context"
 )
 
 type benchConfig struct {

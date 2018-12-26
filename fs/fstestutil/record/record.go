@@ -1,12 +1,12 @@
 package record // import "github.com/OneOfOne/fuse/fs/fstestutil/record"
 
 import (
+	"context"
 	"sync"
 	"sync/atomic"
 
 	"github.com/OneOfOne/fuse"
 	"github.com/OneOfOne/fuse/fs"
-	"golang.org/x/net/context"
 )
 
 // Writes gathers data from FUSE Write calls.
