@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"testing"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs/fstestutil"
+	"github.com/OneOfOne/fuse"
+	"github.com/OneOfOne/fuse/fs/fstestutil"
 )
 
 func TestMountOptionCommaError(t *testing.T) {
@@ -21,6 +21,7 @@ func TestMountOptionCommaError(t *testing.T) {
 	mnt, err := fstestutil.MountedT(t, fstestutil.SimpleFS{fstestutil.Dir{}}, nil,
 		fuse.ForTestSetMountOption("fusetest", evil),
 	)
+
 	if err == nil {
 		mnt.Close()
 		t.Fatal("expected an error about commas")

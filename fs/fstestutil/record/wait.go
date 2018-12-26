@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs"
+	"github.com/OneOfOne/fuse"
+	"github.com/OneOfOne/fuse/fs"
 	"golang.org/x/net/context"
 )
 

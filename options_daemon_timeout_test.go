@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs"
-	"bazil.org/fuse/fs/fstestutil"
+	"github.com/OneOfOne/fuse"
+	"github.com/OneOfOne/fuse/fs"
+	"github.com/OneOfOne/fuse/fs/fstestutil"
 	"golang.org/x/net/context"
 )
 
